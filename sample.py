@@ -3,14 +3,16 @@ class Bank:
          self.name = name
          self.balance =  balance
            
-    def deposit(self,deposit_amount):
+    def deposit(self):
          print("Hello Mr/Mrs",self.name)
+         deposit_amount = float(input('Enter the amount'))
          self.balance += deposit_amount
          print(f"Amount {deposit_amount}Rs credit successfully")
          print(f"Your Total Balance {self.balance}")
          
-    def withdraw(self,withdraw_amount):
+    def withdraw(self):
          print("Hello Mr/Mrs",self.name)
+         withdraw_amount = float(input('Enter the amount'))
          if self.balance >= withdraw_amount:
                self.balance -= withdraw_amount
                print(f'Amount {withdraw_amount} debited in your account')
@@ -25,7 +27,7 @@ class Bank:
                
 b = Bank('KAMLESH',5000)
 b.deposit(3000)
-b.withdraw(6000)
+b.withdraw()
 print(b.getBalance())
 b.display()
          
