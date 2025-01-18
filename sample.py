@@ -25,9 +25,13 @@ class Bank:
          print(f"NAME    : {self.name}\
                \nBalance : {self.balance}")
                
+    def getName(self):
+         return self.name
+               
 b = Bank('KAMLESH',5000)
 b.deposit()
 b.withdraw()
 print(b.getBalance())
+print(b.getName())
 b.display()
          
