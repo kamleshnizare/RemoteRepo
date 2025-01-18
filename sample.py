@@ -26,7 +26,7 @@ class Bank:
                \nBalance : {self.balance}")
                
 b = Bank('KAMLESH',5000)
-b.deposit(3000)
+b.deposit()
 b.withdraw()
 print(b.getBalance())
 b.display()
